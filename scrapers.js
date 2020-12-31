@@ -3,7 +3,7 @@ const csv = require("csv-parser");
 const fs = require("fs");
 let count = 0;
 const results = [];
-fs.createReadStream("gmail.csv", { start: 0, end: 900 })
+fs.createReadStream("gmail.csv")
   .pipe(
     csv({
       headers: false,
